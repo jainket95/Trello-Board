@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css" type='text/css'>
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <title>Trello Todo Task Board</title>
+</head>
+<body>
+
+  <div class='navbar'>
+    <div class="brand">
+      <a href="#" id="brandname"><span><i class="fa fa-wpforms fa-2x"></i></span>Trello Board</a>
+    </div>
+  </div>
+
+  <div class="maincontainer">
+    <div class="addmcontainer">
+     <div class="addcontainer">
+       <h3>Tasks List</h3>
+       <hr class="newrule"> 
+        <ul class="addtaskitems">
+           <li class="addlistitems" id="addlistitems">Add your Daily Tasks Here <span><i class="fa fa-tasks fa-lg"></i></span></li>
+         </ul>
+         <hr class="newrule">
+         <form id='myform'>
+         <input type='text' id='addinput' placeholder="  Add task here">
+         <input type='submit' id='mybutton' value="+">
+        </form>
+         <ul id='addlisthere'>
+           <li id='addeditemlist'><span id='ongoing'><i class="fa fa-pencil-square-o fa-lg"></i></span><span id='done'><i class="fa fa-check-square-o fa-lg"></i></span><span id='delete'><i class="fa fa-trash fa-lg"></i></span></li>
+           <li id='addeditemlist'><span id='ongoing'><i class="fa fa-pencil-square-o fa-lg"></i></span><span id='done'><i class="fa fa-check-square-o fa-lg"></i></span><span id='delete'><i class="fa fa-trash fa-lg"></i></span></li>
+           <li id='addeditemlist'><span id='ongoing'><i class="fa fa-pencil-square-o fa-lg"></i></span><span id='done'><i class="fa fa-check-square-o fa-lg"></i></span><span id='delete'><i class="fa fa-trash fa-lg"></i></span></li>
+         </ul>
+     </div>
+    </div>
+
+    <div class="ongoingcontainer">
+      <div class="ongoingtask">
+        <h3>On Going Task</h3>
+        <hr class='newrule' >
+        <ul class="ongtaskitems">
+          <li class="onglistitems">List of Partially Completed Tasks <span><i class="fa fa-pencil-square-o fa-lg"></i></span></li>
+        </ul>
+        <hr class='newrule'>
+        <ul id='addogtask'>
+
+        </ul>
+      </div>
+    
+    </div>
+
+    <div class="donetaskcontainer">
+      <div class="donetask">
+        <h3>Completed Task</h3>
+        <hr class='newrule'>
+        <ul class="dntaskitems">
+          <li class="dnlistitems">List of Completed Tasks <span><i class="fa fa-check-square-o fa-lg"></i></span></li>
+        </ul>
+        <hr class='newrule'>
+        <ul id='addcomphere'>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script src='app.js'></script>
+</body>
+</html>

@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,500,700&display=swap');
+
+body{
+  margin:0;
+  height: 0;
+  overflow-x: hidden;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  background: gray;
+}
+ul, li{
+  margin:0;
+  padding:0;
+  list-style-type: none;
+}
+
+.navbar{
+  width:100%;
+  height: 75px;
+  background: #0F2027; 
+  background: -webkit-linear-gradient(to left, #2C5364, #203A43, #0F2027);
+  background: linear-gradient(to left, #2C5364, #203A43, #0F2027);
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center; 
+  z-index: 5;
+}
+
+.brand{
+  width:300px;
+  height: 60px;
+  text-align: center;
+  padding-left: 120px;
+  background-color: #D4D4D4;
+  /* display: flex;
+  align-items: center;  */
+}
+
+#brandname{
+  width: 290px;
+  height: 60px;
+  text-align: center;
+  color: #494848;
+  font-size:1.8rem;
+  font-weight: 500;
+  text-decoration: none;
+  letter-spacing: 2px;
+  line-height: 1.4;
+  align-self: center;
+}
+
+#brandname span{  
+  width: 250px;
+  height: 50px;
+  align-self: center;
+  color:black;
+  margin-right:10px;
+}
+
+.maincontainer{
+  height: 650px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  background: whitesmoke;
+  margin-top: 80px;
+  color:black;
+  margin-bottom: 10px;
+}
+
+.addmcontainer{
+  width: 28%;
+  height:650px;
+}
+
+.addcontainer{
+  width: 100%;
+  height: 650px; 
+  padding-right: 18px;
+  margin-left: 20px;
+  border-right: 3px solid #0F2027;
+}
+
+.addcontainer h3, .ongoingtask h3, .donetask h3{
+  font-size: 1.8rem;
+  margin: 10px 0px 10px 0px;
+  text-align: center;
+  color: #036;
+}
+.addcontainer ul li, .ongoingtask ul li, .donetask ul li{
+  height: 38px;
+  font-size:1.2rem;
+  text-align: center;
+  word-spacing: 10px;
+  background-color: #494848;
+  color: white;
+  line-height: 2;
+}
+li.addlistitems{
+  cursor: pointer ;
+}
+
+li.addlistitems span, li.onglistitems span, li.dnlistitems span{
+  width: 26px;
+  height: 26px;
+  float: right;
+  margin-right: 20px;
+}
+li.addlistitems span{
+  margin-right: 10px;
+}
+
+ul#addlisthere li, ul#addogtask li, ul#addcomphere li{
+  height: 42px;
+  font-size:1rem;
+  text-align: justify;
+  padding: 0px 5px 0px 9px;
+  background: #203A43;  
+  color: white;
+  margin-top:6px;
+  line-height: 2.6;
+  list-style-type: square;
+}
+
+ span#ongoing, span#done, span#delete{
+  width: 26px;
+  height: 44px;
+  position: relative;
+  left: 290px;
+  margin-right: 4px;
+  padding: 8px;
+  line-height: 2;
+}
+
+
+ span#done:hover, li.dnlistitems span{
+  color: greenyellow;
+}
+
+ span#ongoing:hover,  li.onglistitems span{
+  color: blue;
+}
+
+ span#delete:hover{
+  color: red;
+}
+
+
+hr.newrule{
+width: 100%;
+margin: 4px -1px 4px 0px;
+border: 2px outset #0F2027;
+}
+
+.ongoingcontainer, .donetaskcontainer{
+  width:30%;
+  height: 650px;
+  margin-right: 20px;
+}
+
+.ongoingtask, .donetask{
+  width:100%;
+  height: 650px;
+}
+
+.newli{
+  list-style: none;
+  width:50px;
+  height: 60px;
+  color:black;
+}
+
+.addcontainer form{
+  /* display: block; */
+}
+
+.addcontainer input{
+  width:100%;
+  height: 49px;
+  outline: none;
+  border:none;
+  outline: none;
+  border-bottom: 2px solid #494848;
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+
+input[type='submit']{
+  border:none;
+  outline: none;
+  width: 49px;
+  height: 49px;
+  font-size: 3rem;
+  position: relative;
+  float: right;
+  bottom: 52px;
+  line-height: 1;
+}
+
+
