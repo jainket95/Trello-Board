@@ -112,7 +112,7 @@ li.addlistitems span{
   margin-right: 10px;
 }
 
-ul#addlisthere li, ul#addogtask li, ul#addcomphere li{
+ul#addlisthere li{ 
   height: 42px;
   font-size:1rem;
   text-align: justify;
@@ -122,6 +122,30 @@ ul#addlisthere li, ul#addogtask li, ul#addcomphere li{
   margin-top:6px;
   line-height: 2.6;
   list-style-type: square;
+}
+
+ul#addogtask li, ul#addcomphere li{
+  height: 42px;
+  font-size:1rem;
+  text-align: justify;
+  padding: 0px 5px 0px 9px;
+  background: #203A43;  
+  color: white;
+  margin-top:6px;
+  line-height: 2.6;
+  list-style-type: square;
+}
+
+.addselected{
+text-decoration: line-through;
+opacity: 0.5;
+color: black;
+}
+
+.ongselected{
+text-decoration: line-through;
+opacity: 0.5;
+color: black;
 }
 
  span#ongoing, span#done, span#delete{
