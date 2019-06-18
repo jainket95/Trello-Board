@@ -17,60 +17,62 @@
   </div>
 
   <div class="maincontainer">
-    <div class="addmcontainer">
-     <div class="addcontainer">
-       <h3>Tasks List</h3>
-       <hr class="newrule"> 
-        <ul class="addtaskitems">
-           <li class="addlistitems" id="addlistitems">Add your Daily Tasks Here <span><i class="fa fa-tasks fa-lg"></i></span></li>
-         </ul>
-         <hr class="newrule">
-         <form id='myform'>
-         <input type='text' id='addinput' placeholder="  Add task here">
-         <input type='submit' id='mybutton' value="+">
-        </form>
-         <ul id='addlisthere'>
-           <li class="addli">1<span id='ongoing'><i class="fa fa-pencil-square-o fa-lg"></i></span><span id='done'><i class="fa fa-check-square-o fa-lg"></i></span><span id='delete'><i class="fa fa-trash fa-lg"></i></span></li>
-
-
-           <li class="addli">2<span id='ongoing'><i class="fa fa-pencil-square-o fa-lg"></i></span><span id='done'><i class="fa fa-check-square-o fa-lg"></i></span><span id='delete'><i class="fa fa-trash fa-lg"></i></span></li>
-           
-           
-           <li class="addli">3<span id='ongoing'><i class="fa fa-pencil-square-o fa-lg"></i></span><span id='done'><i class="fa fa-check-square-o fa-lg"></i></span><span id='delete'><i class="fa fa-trash fa-lg"></i></span></li>
-         </ul>
-     </div>
-    </div>
-
-    <div class="ongoingcontainer">
-      <div class="ongoingtask">
-        <h3>On Going Task</h3>
-        <hr class='newrule' >
-        <ul class="ongtaskitems">
-          <li class="onglistitems">List of Partially Completed Tasks <span><i class="fa fa-pencil-square-o fa-lg"></i></span></li>
-        </ul>
-        <hr class='newrule'>
-        <ul id='addogtask'>
-            <li class='ongli' >1<span id='done'><i class="fa fa-check-square-o fa-lg"></i></span><span id='delete'><i class="fa fa-trash fa-lg"></i></span></li>
-        </ul>
+    <div class="onecontainer">
+      <div class="addmcontainer">
+       <div class="addcontainer">
+         <h3>Tasks List</h3>
+         <hr class="newrule"> 
+          <ul class="addtaskitems">
+             <li class="addlistitems" id="addlistitems">Add your Daily Tasks Here <span><i class="fa fa-tasks fa-lg"></i></span></li>
+           </ul>
+           <hr class="newrule">
+           <form id='myform'>
+           <input type='text' id='addinput' placeholder="  Add task here">
+           <input type='submit' id='mybutton' value="+">
+          </form>
+           <ul id='addlisthere'>
+             <li id='addLi0' class="addli">1<span class= 'ongoing'><i class="fa fa-pencil-square-o fa-lg"></i></span><span class='done'><i class="fa fa-check-square-o fa-lg"></i></span><span class='delete'><i class="fa fa-trash fa-lg"></i></span></li>
+  
+             <li id='addLi1' class="addli">2<span class= 'ongoing'><i class="fa fa-pencil-square-o fa-lg"></i></span><span class='done'><i class="fa fa-check-square-o fa-lg"></i></span><span class='delete'><i class="fa fa-trash fa-lg"></i></span></li>
+             
+             <li id='addLi2' class="addli">3<span class= 'ongoing'><i class="fa fa-pencil-square-o fa-lg"></i></span><span class='done'><i class="fa fa-check-square-o fa-lg"></i></span><span class='delete'><i class="fa fa-trash fa-lg"></i></span></li>
+           </ul>
+       </div>
       </div>
+
+    </div>
+              
+    <div class="twocontainer">
+      <div class="ongoingcontainer">
+          <div class="ongoingtask">
+            <h3>On Going Task</h3>
+            <hr class='newrule' >
+            <ul class="ongtaskitems">
+              <li class="onglistitems">List of Partially Completed Tasks <span><i class="fa fa-pencil-square-o fa-lg"></i></span></li>
+            </ul>
+            <hr class='newrule'>
+            <ul id='addogtask'>
+                <li id='ongLi0' class='ongli'>1<span class='done'><i class="fa fa-check-square-o fa-lg"></i></span><span class='delete'><i class="fa fa-trash fa-lg"></i></span></li>
+            </ul>
+          </div>        
+        </div>
     
-    </div>
-
-    <div class="donetaskcontainer">
-      <div class="donetask">
-        <h3>Completed Task</h3>
-        <hr class='newrule'>
-        <ul class="dntaskitems">
-          <li class="dnlistitems">List of Completed Tasks <span><i class="fa fa-check-square-o fa-lg"></i></span></li>
-        </ul>
-        <hr class='newrule'>
-        <ul id='addcomphere'>
-            <li class='doneli'>1<span id='delete'><i class="fa fa-trash fa-lg"></i></span></li>
-        </ul>
-      </div>
+        <div class="donetaskcontainer">
+          <div class="donetask">
+            <h3>Completed Task</h3>
+            <hr class='newrule'>
+            <ul class="dntaskitems">
+              <li class="dnlistitems">List of Completed Tasks <span><i class="fa fa-check-square-o fa-lg"></i></span></li>
+            </ul>
+            <hr class='newrule'>
+            <ul id='addcomphere'>
+                <li id='doneLi0' class='doneli'>1<span class='delete'><i class="fa fa-trash fa-lg"></i></span></li>
+            </ul>
+          </div>
+        </div>
     </div>
   </div>
 
-  <script src='app.js'></script>
+  <script src='appNewApproach.js'></script>
 </body>
 </html>
